@@ -1,60 +1,61 @@
 <!DOCTYPE html>
 <style>
-  h1 { color:green; font-family:roboto;}
-  p { color:purple;}
-    .default {background-color: silver; font-family:roboto;}
-    .header {background-color: black; text-align:center; margin-top:25px; margin-bottom:25px padding: 20px 20px 20px 20px}
-    .red-border {border-color: red; border-width: 10px; border-style:dotted; }
+  h1 { color:#5555ff; font-family:roboto;}
+  p { color:#a100ff}
+    .default{background-color: silver; font-family:roboto; padding: 15px 0px 25px 5px; border-radius: 15px; border-color:#5555Ff; border-width:2px; border-style:solid;}
+    .header {background-color: black; text-align:center; margin:4px 20px 10px 20px; padding: 5px 20px 8px 20px; border-radius:15px;border-radius: 15px;}
+    .button-border {border-color: #a500ff; border-width: 3px; border-style:solid; border-radius: 5px; }
     .button {text-alignt:center;}
 </style>
-<html>
+<html> 
   <div class="header">
 <head>
 <h1>What should I cook today?</h1>
 </head>
 </div>
 <div class="default">
-<body>
+<body style="background-color:gray">
 <ol>  
  <li>
   <p>Select a protein:</p>
-  <input type="radio" name="protein" id="beef" checked>Beef
-  <input type="radio" name="protein" id="chicken">Chicken
-  <input type="radio" name="protein" id="pork">Pork<p></p>
-  <input type="radio" name="protein" id="vegetarian">Vegetarian
-  <input type="radio" name="protein" id="seafood">Seafood
+  <input type="radio" name="protein" id="beef" value="beef" checked>Beef
+  <input type="radio" name="protein" id="chicken" value="chicken">Chicken
+  <input type="radio" name="protein" id="pork" value="pork">Pork<p></p>
+  <input type="radio" name="protein" id="vegetarian" value="vegetarian">Vegetarian
+  <input type="radio" name="protein" id="seafood" value="seafood">Seafood
   </li>
   <li>
     <p>Select a carb:</p>
-    <input type="radio" name="carb" id="rice" checked>Rice
-    <input type="radio" name="carb" id="pasta">
-    <input type="radio" name="carb" id="maize">Maize<p></p>
-    <input type="radio" name="carb" id="beans">Beans
-    <input type="radio" name="carb" id="bread">Bread
-    <input type="radio" name="carb" id="noodles">Noodles
+    <input type="radio" name="carb" id="rice" value="rice" checked>Rice
+    <input type="radio" name="carb" id="pasta" value="pasta">Pasta
+    <input type="radio" name="carb" id="maize" value="maize">Maize<p></p>
+    <input type="radio" name="carb" id="beans" value="beans">Beans
+    <input type="radio" name="carb" id="bread" value="bread">Bread
+    <input type="radio" name="carb" id="noodles" value="noodles">Noodles
   </li>
   <li>
     <p>Prepatation style:</p>
-    <input type="radio" name="prep" id="soup" checked>Soup
-    <input type="radio" name="prep" id="grilled">Grilled
-    <input type="radio" name="prep" id="baked">Baked<p></p>
-    <input type="radio" name="prep" id="stir-fry">Stir-fry
-    <input type="radio" name="prep" id="salad">Salad
+    <input type="radio" name="prep" id="soup" value="soup" checked>Soup
+    <input type="radio" name="prep" id="grilled" value="grilled">Grilled
+    <input type="radio" name="prep" id="baked" value="baked">Baked<p></p>
+    <input type="radio" name="prep" id="stir-fry" value="stir-fry">Stir-fry
+    <input type="radio" name="prep" id="salad" value="salad">Salad
     <input type="radio" name="prep" id="uncooked">Uncooked
   </li>
   <li>
     <p>Additional desired traits:</p>
-    <input type="checkbox" name="trait" id="spicy">Spicy
-    <input type="checkbox" name="trait" id="crunchy">Crunchy
-    <input type="checkbox" name="trait" id="tart">Tart<p></p>
-    <input type="checkbox" name="trait" id="Sweet">Sweet
-    <input type="checkbox" name="trait" id="Savory">Savory
-    <input type="checkbox" nane="trait" id="finger-food">Finger-food
+    <input type="checkbox" name="trait" id="spicy" value="spicy">Spicy
+    <input type="checkbox" name="trait" id="crunchy" value="crunchy">Crunchy
+    <input type="checkbox" name="trait" id="tart" value="tart">Tart<p></p>
+    <input type="checkbox" name="trait" id="Sweet" value="tart">Sweet
+    <input type="checkbox" name="trait" id="Savory" value="savory">Savory
+    <input type="checkbox" nane="trait" id="finger-food" value="finger-food">Finger-food
   </li>
 </ol>
 </div>
 <div>
-<button type="submit" class="red-border" style="font-size: 20px;">Lets get cooking!</button
+<button type="submit" class="button-border" style="font-size: 20px; margin-left:25px; margin-top:10px;" >Lets get cooking!</button
 </body>
+</div>
 </div>
 </html>
